@@ -21,6 +21,7 @@ import {
 
 import { useCalculator } from './Calculator.hooks';
 
+import backspaceIcon from './icons/backspace-svgrepo-com.svg';
 
 
 function Calculator() {
@@ -59,7 +60,7 @@ function Calculator() {
                 <Container>
                     <StyledRow xs={1} md={4} className="g-4">
                         <Col>
-                            <BackspaceButton size="lg" variant="danger" onClick={handleBackspace}><BackspaceImage src="icons/backspace-svgrepo-com.svg"></BackspaceImage></BackspaceButton>
+                            <BackspaceButton size="lg" variant="danger" onClick={handleBackspace}><BackspaceImage src={backspaceIcon}></BackspaceImage></BackspaceButton>
                         </Col>
                         <Col>
                             <CalculatorButton variant="danger" onClick={handleClear}>cls</CalculatorButton>
@@ -81,7 +82,7 @@ function Calculator() {
                             <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("/") }}>/</CalculatorButton>
                         </Col>
                     </StyledRow>
-                    <StyledRow xs={1} md={4} className="g-4">
+                    <StyledRow  className="g-4">
                         <Col>
                             <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("7") }}>7</CalculatorButton>
                         </Col>
@@ -95,7 +96,7 @@ function Calculator() {
                             <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("*") }}>*</CalculatorButton>
                         </Col>
                     </StyledRow>
-                    <StyledRow xs={1} md={4} className="g-4">
+                    <StyledRow  className="g-4">
                         <Col>
                             <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("4") }}>4</CalculatorButton>
                         </Col>
@@ -109,7 +110,7 @@ function Calculator() {
                             <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("-") }}>-</CalculatorButton>
                         </Col>
                     </StyledRow>
-                    <StyledRow xs={1} md={4} className="g-4">
+                    <StyledRow className="g-4">
                         <Col>
                             <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("1") }}>1</CalculatorButton>
                         </Col>
@@ -123,8 +124,8 @@ function Calculator() {
                             <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("+") }}>+</CalculatorButton>
                         </Col>
                     </StyledRow>
-                    <StyledRow xs={1} md={4} className="g-4">
-                        <Col>
+                    <StyledRow className="g-4">
+                        <Col >
                             <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("0") }}>0</CalculatorButton>
                         </Col>
                         <Col>

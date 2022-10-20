@@ -5,7 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 export const CalculatorBody = styled.div`
 background-color: #dfe9f5;
-min-height: 100vh;
+min-height: calc(100vh - 60px);
 
 `;
 
@@ -53,7 +53,7 @@ export const StyledRow = styled(Row)`
 
 export const BackspaceButton = styled(Button)`
 
-width:100px;
+width:100%;
 max-height: 50px;
 `
 
@@ -63,20 +63,20 @@ export const BackspaceImage = styled.img`
 
 export const EqualsButton = styled(Button)`
 
-width:230px;
+width:100%;
 height: 50px;
 `;
 
 
 export const CalculatorButton = styled(Button)`
 
-width:100px;
+width:100%;
 height: 50px;
 
 `;
 
 export const ParenthesisButton = styled(Dropdown.Toggle)`
 
-width:100px;
+width:100%;
 height: 50px;
 `;
