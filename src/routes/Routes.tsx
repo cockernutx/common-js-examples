@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import Layout from "../components/Layout/Layout";
 
@@ -17,12 +17,12 @@ function ApplicationRoutes() {
       }
     
       return (
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={routeElement(<Home></Home>)} />
             <Route path="Calculator/" element={routeElement(<Calculator></Calculator>)}></Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       );
 };
 
