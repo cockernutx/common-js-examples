@@ -7,4 +7,6 @@ RUN apt install nodejs -y
 
 RUN npm install create-react-app react typescript -g --save-dev
 
+WORKDIR app/
+
 CMD npm start
