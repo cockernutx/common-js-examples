@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-
+import githubIcon from './images/GitHub-Mark-32px.png'
 
 import {LayoutNavBar} from './NavMenu.styled'
 
@@ -37,9 +37,9 @@ function NavMenu() {
           </NavDropdown>*/}
         </Nav>
 
-        {/*<Navbar.Text>
-          Signed in as: <a href="#login">Mark Otto</a>
-        </Navbar.Text> */}
+        <Navbar.Text>
+          <a href="https://github.com/cockernutx/js_homework" target="_blank"><img src={githubIcon}/></a>
+        </Navbar.Text> 
         
       </Navbar.Collapse>
     </LayoutNavBar>

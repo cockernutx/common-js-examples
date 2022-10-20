@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Body = styled.div`
 background-color: rgb(236, 225, 245);
-min-height: 100px;
+min-height: calc(100vh - 60px);
 
 `;
 
@@ -18,4 +18,5 @@ export const MainDiv = styled.div`
     right: 0;
     border-radius: 10px;
     margin: auto;
+    padding: 10px;
 `;
