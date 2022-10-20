@@ -29,11 +29,19 @@ function Calculator() {
     const [showRes, setShowRes] = useState<boolean>(false);
 
     const handleModifierChange = (modifier: string) => {
-        setShowRes(false);
-        modifyExpression(`${modifier}`);
+        if(showRes) {
+            modifyExpression(result + modifier);
+            setShowRes(false);
+        }
+        else modifyExpression(modifier);
+
+        
     }
 
     const getResult = () => {
+        if(showRes) {
+            return;
+        }
         evaluate();
         setShowRes(true);
     }
