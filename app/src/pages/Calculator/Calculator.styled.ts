@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export const CalculatorBody = styled.div`
 background-color: #dfe9f5;
@@ -8,7 +10,7 @@ min-height: 100vh;
 `;
 
 export const MainDiv = styled.div`
-    width: 50%;
+    width: 30%;
     height: 50%;
     background-color: white;
     
@@ -31,6 +33,7 @@ border-top-right-radius: 10px;
 display: flex;
 flex-direction: column;
 padding: 10px 10px 20px;
+height: 80px;
 
 `;
 
@@ -48,3 +51,32 @@ export const StyledRow = styled(Row)`
     padding: 10px 1px;
 `;
 
+export const BackspaceButton = styled(Button)`
+
+width:100px;
+max-height: 50px;
+`
+
+export const BackspaceImage = styled.img`
+    height: 30px;
+`;
+
+export const EqualsButton = styled(Button)`
+
+width:230px;
+height: 50px;
+`;
+
+
+export const CalculatorButton = styled(Button)`
+
+width:100px;
+height: 50px;
+
+`;
+
+export const ParenthesisButton = styled(Dropdown.Toggle)`
+
+width:100px;
+height: 50px;
+`;

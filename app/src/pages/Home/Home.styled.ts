@@ -3,21 +3,13 @@ import styled from 'styled-components';
 import HomeworkCard from '../../components/HomeworkCard/HomeworkCard';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import { Col } from 'react-bootstrap';
 
 export const StyledContainer = styled(Container)`
-max-width: 100%;
+width: 50%;
+float: left;
 `
 
-export const StyledCardsGroup = styled(Row)`
-
-padding: 10px 10px;
-
-
-
-`;
-
-export const StyledHomeworkCard = styled(HomeworkCard)`
-    max-width: 50%;
-    max-height: 500px;
-
+export const StyledCardHolder = styled.div`
+    margin-top: 10px;
 `;
