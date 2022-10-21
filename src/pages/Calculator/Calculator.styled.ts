@@ -5,7 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 export const CalculatorBody = styled.div`
 background-color: #dfe9f5;
-min-height: calc(100vh - 60px);
+min-height: 100vh;
 
 `;
 

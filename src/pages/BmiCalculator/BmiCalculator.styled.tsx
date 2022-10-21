@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 export const Body = styled.div`
 background-color: rgb(236, 225, 245);
-min-height: calc(100vh - 60px);
+min-height: 100vh;
 
 `;
 
