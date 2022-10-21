@@ -13,6 +13,7 @@ import airplaneImage from './images/airplane.webp';
 import clockImage from './images/clock.webp';
 import averageImage from './images/average.webp';
 import tipsImage from './images/tips.webp';
+import multiplicationImage from './images/multiplication.webp';
 
 
 function Home() {
@@ -24,6 +25,8 @@ function Home() {
         <StyledCardHolder><HomeworkCard title="Calculator" text="A simple calculator" image={calculatorImage} link="Calculator"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Travel time calculator" text="Convert how long your trip will last from days to hours!" image={airplaneImage} link="DaysToHours/"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Average calculator" text="Calculate the average between two numbers!" image={averageImage} link="AverageCalculator"></HomeworkCard></StyledCardHolder>
+        <StyledCardHolder><HomeworkCard title="Multiplication Table" text="Calculate the average between two numbers!" image={multiplicationImage} link="MultiplicationTable/"></HomeworkCard></StyledCardHolder>
+
 
 
 

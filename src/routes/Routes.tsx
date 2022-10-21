@@ -10,6 +10,7 @@ import DaysToHours from "../pages/DaysToHours/DaysToHours";
 import TimeLived from "../pages/TimeLived/TimeLived";
 import AverageCalculator from "../pages/AverageCalculator/AverageCalculator";
 import BillServiceFee from "../pages/BillServiceFee/BillServiceFee";
+import MultiplicationTable from "../pages/MultiplicationTable/MultiplicationTable";
 
 function ApplicationRoutes() {
 
@@ -31,6 +32,7 @@ function ApplicationRoutes() {
             <Route path="TimeLived/" element={routeElement(<TimeLived></TimeLived>)}></Route>
             <Route path="AverageCalculator/" element={routeElement(<AverageCalculator></AverageCalculator>)}></Route>
             <Route path="BillServiceFee/" element={routeElement(<BillServiceFee></BillServiceFee>)}></Route>
+            <Route path="MultiplicationTable/" element={routeElement(<MultiplicationTable></MultiplicationTable>)}></Route>
           </Routes>
         </HashRouter>
       );

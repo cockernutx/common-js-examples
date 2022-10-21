@@ -11,7 +11,7 @@ function BillServiceFee() {
         setShow(true);
     }
     return (
-        <Body color="rgb(235, 190, 198)">
+        <Body color="rgb(250, 222, 200)">
             <MainDiv style={{height: "250px"}}>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
