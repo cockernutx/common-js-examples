@@ -29,18 +29,16 @@ function Timer() {
 
         setTimeout(() => {
             if (state.time === 0) {
-                return;
+                setShowTimer(false);
+                     return;
             }
-
             setState({
                 time: state.time - 1,
                 seconds: state.time - Math.floor((state.time - 1) / 60) * 60 - 1,
                 minutes: Math.floor((state.time - 1) / 60)
-            })
-            if (state.time === 0) {
-                setShowTimer(false);
-                return;
-            }
+            })   
+ 
+
         }, 1000);
     }, [state.time])
 
