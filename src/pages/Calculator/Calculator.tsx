@@ -137,7 +137,7 @@ function Calculator() {
                             <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("0") }}>0</CalculatorButton>
                         </Col>
                         <Col>
-                            <CalculatorButton variant="outline-info" onClick={() => { handleModifierChange(",") }}>,</CalculatorButton>
+                            <CalculatorButton variant="outline-info" onClick={() => { handleModifierChange(".") }}>.</CalculatorButton>
                         </Col>
                         <Col>
                             <EqualsButton variant="outline-success" onClick={getResult}>=</EqualsButton>
