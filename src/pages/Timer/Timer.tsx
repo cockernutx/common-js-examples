@@ -56,7 +56,7 @@ function Timer() {
 
     return (
         <Body color="rgb(240, 234, 204)">
-            <MainDiv style={{ height: "30%" }}>
+            <MainDiv style={{ height: "30%", width: "300px" }}>
                 {showTimer ?
                     <TimerDiv>{`${state.minutes}:${state.seconds <= 10 ? `0${state.seconds}` : state.seconds}`}</TimerDiv> :
                     <Form onSubmit={handleSubmit}>
