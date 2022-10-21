@@ -8,7 +8,8 @@ function DaysToHours() {
     const [travelDays, setTravelDays] = useState<string>("0");
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (event: React.FormEvent<Element>) => {
+        event.preventDefault()
         setShow(true);
     }
 

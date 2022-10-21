@@ -26,6 +26,7 @@ function Home() {
         <StyledCardHolder><HomeworkCard title="Travel time calculator" text="Convert how long your trip will last from days to hours!" image={airplaneImage} link="DaysToHours/"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Average calculator" text="Calculate the average between two numbers!" image={averageImage} link="AverageCalculator"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Multiplication Table" text="Calculate the average between two numbers!" image={multiplicationImage} link="MultiplicationTable/"></HomeworkCard></StyledCardHolder>
+        <StyledCardHolder><HomeworkCard title="Multiplication Table" text="Calculate the average between two numbers!" image={multiplicationImage} link="Timer/"></HomeworkCard></StyledCardHolder>
 
 
 
@@ -38,7 +39,7 @@ function Home() {
       <StyledCardHolder> <HomeworkCard title="Bmi Calculator" text="Check if your body mass index is in an healthy range here!" image={humanBody} link="BmiCalculator/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder> <HomeworkCard title="Time lived" text="See how much days, hours and seconds you have lived! (not counting leap years xd)" image={clockImage} link="TimeLived/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Restaurant bill with service fee" text="Calculate the total of an restaurant bill with an service fee percentage" image={tipsImage} link="BillServiceFee/"></HomeworkCard></StyledCardHolder>
-      <StyledCardHolder><HomeworkCard title="Month picker" text="Just pick a month, simple as." image={calendarImage} link="ChooseMonth/"></HomeworkCard></StyledCardHolder>
+      <StyledCardHolder><HomeworkCard title="Timer" text="This is a simple timer" image={calendarImage} link="ChooseMonth/"></HomeworkCard></StyledCardHolder>
         
 
       </StyledContainer>

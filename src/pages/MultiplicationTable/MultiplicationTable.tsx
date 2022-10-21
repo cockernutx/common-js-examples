@@ -8,7 +8,8 @@ function MultiplicationTable() {
     const [res, setRes] = useState<string[]>([]);
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (event: React.FormEvent<Element>) => {
+        event.preventDefault()
         let rows: string[] = [];
         for (let i = 0; i <= 10; i++) {
             rows.push(`${firstNum}*${i}=${parseInt(firstNum) * i}`);

@@ -7,7 +7,8 @@ function BillServiceFee() {
     const [billAmmount, setBilAmmount] = useState<string>("0");
     const [serviceFee, setServiceFee] = useState<string>("0");
 
-    const handleSubmit = () => {
+    const handleSubmit = (event: React.FormEvent<Element>) => {
+        event.preventDefault()
         setShow(true);
     }
     return (

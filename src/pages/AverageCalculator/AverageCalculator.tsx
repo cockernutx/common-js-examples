@@ -7,7 +7,8 @@ function AverageCalculator() {
     const [firstNum, setFirstNum] = useState<string>("0");
     const [secondNum, setSecondNum] = useState<string>("0");
 
-    const handleSubmit = () => {
+    const handleSubmit = (event: React.FormEvent<Element>) => {
+        event.preventDefault()
         setShow(true);
     }
     return (
