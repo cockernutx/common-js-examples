@@ -38,7 +38,9 @@ function Home() {
       <StyledCardHolder> <HomeworkCard title="Bmi Calculator" text="Check if your body mass index is in an healthy range here!" image={humanBody} link="BmiCalculator/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder> <HomeworkCard title="Time lived" text="See how much days, hours and seconds you have lived! (not counting leap years xd)" image={clockImage} link="TimeLived/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Restaurant bill with service fee" text="Calculate the total of an restaurant bill with an service fee percentage" image={tipsImage} link="BillServiceFee/"></HomeworkCard></StyledCardHolder>
-       
+      <StyledCardHolder><HomeworkCard title="Calculator" text="A simple calculator" image={calculatorImage} link="ChooseMonth/"></HomeworkCard></StyledCardHolder>
+        
+
       </StyledContainer>
     
  </div >

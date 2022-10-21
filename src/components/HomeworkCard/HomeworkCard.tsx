@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 
-import {StyledCard} from './HomeworkCard.styled'
+import { StyledCard, StyledLink } from './HomeworkCard.styled'
 
 interface HomeworkCardProps {
     title: string;
@@ -14,6 +14,7 @@ interface HomeworkCardProps {
 
 function HomeworkCard(props: HomeworkCardProps) {
     return (
+        <StyledLink to={props.link} >
         <StyledCard >
             <Card.Img variant="top" src={props.image} />
             <Card.Body>
@@ -21,11 +22,12 @@ function HomeworkCard(props: HomeworkCardProps) {
                 <Card.Text>
                     {props.text}
                 </Card.Text>
-                <Link to={props.link}>
-                    <Button variant="primary">Go!</Button>
-                </Link>
+                
+                    
+        
             </Card.Body>
         </StyledCard>
+                </StyledLink >
     )
 }
 
