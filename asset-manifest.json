@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/js_homework/static/css/main.85768c17.css",
-    "main.js": "/js_homework/static/js/main.400e40cc.js",
+    "main.js": "/js_homework/static/js/main.e3a5d27e.js",
     "static/js/787.c1112931.chunk.js": "/js_homework/static/js/787.c1112931.chunk.js",
     "static/media/multiplication.webp": "/js_homework/static/media/multiplication.81e8277bfcccf55cc3f0.webp",
     "static/media/airplane.webp": "/js_homework/static/media/airplane.7fc34d7c8a2b0a5761df.webp",
     "static/media/clock.webp": "/js_homework/static/media/clock.b395f10d581ea6774122.webp",
     "static/media/calculator.webp": "/js_homework/static/media/calculator.6a32825f7c8a0d651070.webp",
+    "static/media/calendar.webp": "/js_homework/static/media/calendar.6ccd4c42b14d4d2b7d95.webp",
     "static/media/humanbody.webp": "/js_homework/static/media/humanbody.9de867f27b15d75b626e.webp",
     "static/media/tips.webp": "/js_homework/static/media/tips.5ac16ab39a194cba2863.webp",
     "static/media/average.webp": "/js_homework/static/media/average.09cfc0e4df867b8f5ac6.webp",
     "static/media/backspace-svgrepo-com.svg": "/js_homework/static/media/backspace-svgrepo-com.654b825b6462546303c8ee3d425256b2.svg",
     "index.html": "/js_homework/index.html",
     "main.85768c17.css.map": "/js_homework/static/css/main.85768c17.css.map",
-    "main.400e40cc.js.map": "/js_homework/static/js/main.400e40cc.js.map",
+    "main.e3a5d27e.js.map": "/js_homework/static/js/main.e3a5d27e.js.map",
     "787.c1112931.chunk.js.map": "/js_homework/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85768c17.css",
-    "static/js/main.400e40cc.js"
+    "static/js/main.e3a5d27e.js"
   ]
 }
