@@ -1,25 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
-import { Body, MainDiv } from './BmiCalculator.styled';
+import Fade from '../../components/Fade/Fade.styled';
+
+import { Body, MainDiv, HealthyBmi, UnhealthyBmi, OkBmi, BmiDiv } from './BmiCalculator.styled';
 
 function BmiCalculator() {
+    const [weight, setWeight] = useState<number>(0);
+    const [height, setHeight] = useState<number>(0);
+    const [bmi, setBmi] = useState<number>(0);
+    const [show, setShow] = useState<boolean>(false);
+    const handleWeightChange = (event: any) => {
+        setWeight(event.target.value)
+    }
+    const handleHeightChange = (event: any) => {
+        setHeight(event.target.value)
+    }
+
+    const handleSubmit = (event: React.FormEvent<Element>) => {
+        event.preventDefault();
+        let res = (weight/(height*height)) * 10000;
+
+        if(res == 0 || res == undefined || res.toString() == 'NaN') return;
+        setBmi(res);
+        setShow(true);
+        setTimeout(() => {
+            setShow(false)
+            //console.log(show);
+        }, 10000)
+    }
+
+    const BmiElement = () => {
+         <></>;
+
+
+
+        if(bmi <= 20.7) return <UnhealthyBmi  text='You are underweight!'></UnhealthyBmi>;
+        else if(bmi >= 20.8 && bmi <= 26.4) return <HealthyBmi text='Your bmi is pretty good!'></HealthyBmi>;
+        else if (bmi >= 26.5 && bmi <= 27.8) return <OkBmi text='You are a litte overweight!'></OkBmi>;
+        else if (bmi >= 27.9 && bmi <= 31.1) return <UnhealthyBmi text='You are overweight!'></UnhealthyBmi>;
+        else return <UnhealthyBmi text='You are obese!'></UnhealthyBmi>
+    }
+
     return (
         <Body>
             <MainDiv>
-                <Form>
+                <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Weight</Form.Label>
-                        <Form.Control type="text" placeholder="Enter your weight in kilograms" />
+                        <Form.Control required={true} type="number" placeholder="Enter your weight in kilograms" onChange={handleWeightChange} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Height</Form.Label>
-                        <Form.Control type="text" placeholder="Enter your Height in centimeters" />
+                        <Form.Control required={true} type="number" placeholder="Enter your Height in centimeters" onChange={handleHeightChange} />
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Button style={{marginTop: "10px", width: "10%", float: "left"}} variant="primary" type="submit">
                         Submit
                     </Button>
+                    <BmiDiv><Fade visible={show} delay="1000ms" ><BmiElement></BmiElement></Fade></BmiDiv>
                 </Form>
+                
             </MainDiv>
         </Body>
     )
