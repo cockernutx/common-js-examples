@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Body, MainDiv } from '../BmiCalculator/BmiCalculator.styled';
+import { Body, MainDiv } from '../../components/Common/Common.styled'
 import { TimerDiv } from './Timer.styled';
 
 
@@ -55,7 +55,7 @@ function Timer() {
     }
 
     return (
-        <Body color="rgb(240, 234, 204)">
+        <Body color="rgb(196, 204, 197)">
             <MainDiv style={{ height: "30%", width: "300px" }}>
                 {showTimer ?
                     <TimerDiv>{`${state.minutes}:${state.seconds <= 10 ? `0${state.seconds}` : state.seconds}`}</TimerDiv> :
