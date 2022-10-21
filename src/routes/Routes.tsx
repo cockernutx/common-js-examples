@@ -8,6 +8,7 @@ import Calculator from "../pages/Calculator/Calculator";
 import BmiCalculator from "../pages/BmiCalculator/BmiCalculator";
 import DaysToHours from "../pages/DaysToHours/DaysToHours";
 import TimeLived from "../pages/TimeLived/TimeLived";
+import AverageCalculator from "../pages/AverageCalculator/AverageCalculator";
 
 function ApplicationRoutes() {
 
@@ -27,6 +28,7 @@ function ApplicationRoutes() {
             <Route path="BmiCalculator/" element={routeElement(<BmiCalculator></BmiCalculator>)}></Route>
             <Route path="DaysToHours/" element={routeElement(<DaysToHours></DaysToHours>)}></Route>
             <Route path="TimeLived/" element={routeElement(<TimeLived></TimeLived>)}></Route>
+            <Route path="AverageCalculator/" element={routeElement(<AverageCalculator></AverageCalculator>)}></Route>
           </Routes>
         </HashRouter>
       );

@@ -4,18 +4,23 @@ import { Body, MainDiv, StyledToast } from '../../components/Common/Common.style
 
 function AverageCalculator() {
     const [show, setShow] = useState<boolean>(false);
-    const [age, setAge] = useState<string>("0");
+    const [firstNum, setFirstNum] = useState<string>("0");
+    const [secondNum, setSecondNum] = useState<string>("0");
 
     const handleSubmit = () => {
         setShow(true);
     }
     return (
         <Body color="rgb(242, 232, 203)">
-            <MainDiv>
+            <MainDiv style={{height: "250px"}}>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>What is your age</Form.Label>
-                        <Form.Control required={true} type="number" placeholder="In years" onChange={(e) => { setShow(false); setAge(e.target.value) }} />
+                        <Form.Label>1st number</Form.Label>
+                        <Form.Control required={true} type="number"  onChange={(e) => { setShow(false); setFirstNum(e.target.value) }} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>2nd number</Form.Label>
+                        <Form.Control required={true} type="number"  onChange={(e) => { setShow(false); setSecondNum(e.target.value) }} />
                     </Form.Group>
 
                     <Button style={{ width: "100%" }} variant="primary" type="submit">
@@ -26,10 +31,10 @@ function AverageCalculator() {
                 <StyledToast show={show} onClose={() => { setShow(false) }} delay={10000} autohide>
                     <Toast.Header>
 
-                        <strong className="me-auto">This is how long you lived!</strong>
+                        <strong className="me-auto">This is the average of the numbers set!</strong>
 
                     </Toast.Header>
-                    <Toast.Body>{show ? `${parseInt(age) * 12} months; ${parseInt(age) * 52.143} weeks; ${parseInt(age) * 365} days; ${parseInt(age) * 8760} hours; ${parseInt(age) * 525600} minutes; ${parseInt(age) * 31556952} seconds`: ""} </Toast.Body>
+                    <Toast.Body>{show ? `${(parseInt(firstNum) + parseInt(secondNum)) /2}`: ""} </Toast.Body>
                 </StyledToast>
 
             </MainDiv>

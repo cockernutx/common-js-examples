@@ -21,6 +21,7 @@ function Home() {
 
         <StyledCardHolder><HomeworkCard title="Calculator" text="A simple calculator" image={calculatorImage} link="Calculator"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Travel time calculator" text="Convert how long your trip will last from days to hours!" image={airplaneImage} link="DaysToHours/"></HomeworkCard></StyledCardHolder>
+        <StyledCardHolder><HomeworkCard title="Average calculator" text="Calculate the average between two numbers!" image={calculatorImage} link="AverageCalculator"></HomeworkCard></StyledCardHolder>
 
 
 
