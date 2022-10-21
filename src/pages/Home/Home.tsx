@@ -12,6 +12,7 @@ import humanBody from './images/humanbody.webp';
 import airplaneImage from './images/airplane.webp';
 import clockImage from './images/clock.webp';
 import averageImage from './images/average.webp';
+import tipsImage from './images/tips.webp';
 
 
 function Home() {
@@ -33,7 +34,8 @@ function Home() {
 
       <StyledCardHolder> <HomeworkCard title="Bmi Calculator" text="Check if your body mass index is in an healthy range here!" image={humanBody} link="BmiCalculator/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder> <HomeworkCard title="Time lived" text="See how much days, hours and seconds you have lived! (not counting leap years xd)" image={clockImage} link="TimeLived/"></HomeworkCard></StyledCardHolder>
-
+      <StyledCardHolder><HomeworkCard title="Restaurant bill with service fee" text="Calculate the total of an restaurant bill with an service fee percentage" image={tipsImage} link="BillServiceFee/"></HomeworkCard></StyledCardHolder>
+       
       </StyledContainer>
     
  </div >
