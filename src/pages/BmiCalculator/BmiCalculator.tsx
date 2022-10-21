@@ -54,7 +54,7 @@ function BmiCalculator() {
                         <Form.Label>Height</Form.Label>
                         <Form.Control required={true} type="number" placeholder="Enter your Height in centimeters" onChange={handleHeightChange} />
                     </Form.Group>
-                    <Button style={{marginTop: "10px", width: "10%", float: "left"}} variant="primary" type="submit">
+                    <Button style={{ width: "10%", float: "left"}} variant="primary" type="submit">
                         Submit
                     </Button>
                     <BmiDiv><Fade visible={show} delay="1000ms" ><BmiElement></BmiElement></Fade></BmiDiv>

@@ -11,7 +11,7 @@ min-height: calc(100vh - 60px);
 
 export const MainDiv = styled.div`
     width: 50%;
-    height: 25%;
+    height: 230px;
     background-color: white;
     
     position: absolute;
@@ -25,7 +25,7 @@ export const MainDiv = styled.div`
 `;
 
 export const BmiDiv = styled.div`
-margin-top: 10px; width: 90%; float: left;
+width: 90%; float: left;
 
 `;
 
