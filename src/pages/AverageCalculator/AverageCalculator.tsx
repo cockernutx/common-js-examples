@@ -11,7 +11,7 @@ function AverageCalculator() {
         setShow(true);
     }
     return (
-        <Body color="rgb(242, 232, 203)">
+        <Body color="rgb(235, 190, 198)">
             <MainDiv style={{height: "250px"}}>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
