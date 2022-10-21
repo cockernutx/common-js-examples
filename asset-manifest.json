@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/js_homework/static/css/main.85768c17.css",
-    "main.js": "/js_homework/static/js/main.a938d2fe.js",
+    "main.js": "/js_homework/static/js/main.0a95822a.js",
     "static/js/787.c1112931.chunk.js": "/js_homework/static/js/787.c1112931.chunk.js",
     "static/media/airplane.webp": "/js_homework/static/media/airplane.7fc34d7c8a2b0a5761df.webp",
     "static/media/clock.webp": "/js_homework/static/media/clock.b395f10d581ea6774122.webp",
@@ -10,11 +10,11 @@
     "static/media/backspace-svgrepo-com.svg": "/js_homework/static/media/backspace-svgrepo-com.654b825b6462546303c8ee3d425256b2.svg",
     "index.html": "/js_homework/index.html",
     "main.85768c17.css.map": "/js_homework/static/css/main.85768c17.css.map",
-    "main.a938d2fe.js.map": "/js_homework/static/js/main.a938d2fe.js.map",
+    "main.0a95822a.js.map": "/js_homework/static/js/main.0a95822a.js.map",
     "787.c1112931.chunk.js.map": "/js_homework/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85768c17.css",
-    "static/js/main.a938d2fe.js"
+    "static/js/main.0a95822a.js"
   ]
 }
