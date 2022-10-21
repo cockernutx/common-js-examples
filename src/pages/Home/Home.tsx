@@ -29,7 +29,7 @@ function Home() {
 
 
       <StyledCardHolder> <HomeworkCard title="Bmi Calculator" text="Check if your body mass index is in an healthy range here!" image={humanBody} link="BmiCalculator/"></HomeworkCard></StyledCardHolder>
-      <StyledCardHolder> <HomeworkCard title="Time lived" text="See how much days, hours and seconds you have lived! (not counting leap years xd)" image={humanBody} link="BmiCalculator/"></HomeworkCard></StyledCardHolder>
+      <StyledCardHolder> <HomeworkCard title="Time lived" text="See how much days, hours and seconds you have lived! (not counting leap years xd)" image={humanBody} link="TimeLived/"></HomeworkCard></StyledCardHolder>
 
       </StyledContainer>
     

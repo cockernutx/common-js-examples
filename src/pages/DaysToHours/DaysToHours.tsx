@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form, Toast } from "react-bootstrap";
 import Fade from "../../components/Fade/Fade.styled";
-import { Body, MainDiv, StyledToast } from "./DaysToHours.styled";
+import { Body, MainDiv, StyledToast } from "../../components/Common/Common.styled";
 
 function DaysToHours() {
     const [show, setShow] = useState<boolean>(false);
@@ -13,7 +13,7 @@ function DaysToHours() {
     }
 
     return (
-        <Body>
+        <Body color="rgb(213, 247, 222)">
             <MainDiv>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

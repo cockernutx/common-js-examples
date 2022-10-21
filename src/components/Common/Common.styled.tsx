@@ -2,8 +2,12 @@ import React from "react";
 import { Toast } from "react-bootstrap";
 import styled from 'styled-components';
 
-export const Body = styled.div`
-background-color: rgb(213, 247, 222);
+interface BodyProps {
+    color: string;
+}
+
+export const Body = styled.div<BodyProps>`
+background-color: ${(p) => (p.color)};
 min-height: 100vh;
 
 `;
