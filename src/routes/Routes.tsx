@@ -14,6 +14,7 @@ import MultiplicationTable from "../pages/MultiplicationTable/MultiplicationTabl
 import ChooseMonth from "../pages/ChooseMonth/ChooseMonth";
 import Timer from "../pages/Timer/Timer";
 import Jankenpon from "../pages/Jankenpon/Jankenpon";
+import OddOrEven from "../pages/OddOrEven/OddOrEven";
 
 function ApplicationRoutes() {
 
@@ -39,6 +40,7 @@ function ApplicationRoutes() {
             <Route path="ChooseMonth/" element={routeElement(<ChooseMonth></ChooseMonth>)}></Route>
             <Route path="Timer/" element={routeElement(<Timer></Timer>)}></Route>
             <Route path="Jankenpon/" element={routeElement(<Jankenpon></Jankenpon>)}></Route>
+            <Route path="OddOrEven/" element={routeElement(<OddOrEven></OddOrEven>)}></Route>
           </Routes>
         </HashRouter>
       );
