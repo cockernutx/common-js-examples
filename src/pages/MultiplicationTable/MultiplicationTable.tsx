@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Modal, Toast } from 'react-bootstrap';
-import { Body, MainDiv, StyledToast } from '../../components/Common/Common.styled';
+import { ComponentBackground, StyledToast } from '../../components/Common/Common.styled';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 function MultiplicationTable() {
     const [show, setShow] = useState<boolean>(false);
@@ -23,8 +24,7 @@ function MultiplicationTable() {
     }
 
     return (
-        <Body color="rgb(163, 177, 199)">
-            <MainDiv style={{ height: "150px" }}>
+        <ComponentLayout color="rgb(163, 177, 199)">
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Type the number that you want an multiplication table for</Form.Label>
@@ -37,7 +37,7 @@ function MultiplicationTable() {
                 </Form>
 
 
-            </MainDiv>
+
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Modal heading</Modal.Title>
@@ -46,7 +46,7 @@ function MultiplicationTable() {
                     {res.map((a) => <>{a}<br></br></>)}
                 </Modal.Body>
             </Modal>
-        </Body>
+        </ComponentLayout>
     )
 }
 

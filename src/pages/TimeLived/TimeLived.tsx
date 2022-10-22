@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Button, Form, Toast } from 'react-bootstrap';
-import { Body, MainDiv, StyledToast } from '../../components/Common/Common.styled';
+import { ComponentBackground, StyledToast } from '../../components/Common/Common.styled';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 function TimeLived() {
     const [show, setShow] = useState<boolean>(false);
@@ -11,9 +12,10 @@ function TimeLived() {
         setShow(true);
     }
     return (
-        <Body color="rgb(242, 232, 203)">
-            <MainDiv>
-                <Form onSubmit={handleSubmit}>
+        <ComponentLayout color="rgb(242, 232, 203)">
+
+          <div>
+          <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>What is your age</Form.Label>
                         <Form.Control required={true} type="number" placeholder="In years" onChange={(e) => { setShow(false); setAge(e.target.value) }} />
@@ -33,8 +35,8 @@ function TimeLived() {
                     <Toast.Body>{show ? `${parseInt(age) * 12} months; ${parseInt(age) * 52.143} weeks; ${parseInt(age) * 365} days; ${parseInt(age) * 8760} hours; ${parseInt(age) * 525600} minutes; ${parseInt(age) * 31556952} seconds`: ""} </Toast.Body>
                 </StyledToast>
 
-            </MainDiv>
-        </Body>
+          </div>
+        </ComponentLayout>
     )
 }
 

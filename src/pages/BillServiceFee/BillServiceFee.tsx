@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Button, Form, Toast } from 'react-bootstrap';
-import { Body, MainDiv, StyledToast } from '../../components/Common/Common.styled';
+import { ComponentBackground, StyledToast } from '../../components/Common/Common.styled';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 function BillServiceFee() {
     const [show, setShow] = useState<boolean>(false);
@@ -12,8 +13,8 @@ function BillServiceFee() {
         setShow(true);
     }
     return (
-        <Body color="rgb(250, 222, 200)">
-            <MainDiv style={{height: "250px"}}>
+        <ComponentLayout color="rgb(250, 222, 200)">
+
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Bill ammount</Form.Label>
@@ -38,8 +39,7 @@ function BillServiceFee() {
                     <Toast.Body>{show ? `R$${(parseInt(billAmmount) + ((parseInt(billAmmount)/100) *parseInt(serviceFee)))}`: ""} </Toast.Body>
                 </StyledToast>
 
-            </MainDiv>
-        </Body>
+        </ComponentLayout>
     )
 }
 

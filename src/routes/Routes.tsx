@@ -13,6 +13,7 @@ import BillServiceFee from "../pages/BillServiceFee/BillServiceFee";
 import MultiplicationTable from "../pages/MultiplicationTable/MultiplicationTable";
 import ChooseMonth from "../pages/ChooseMonth/ChooseMonth";
 import Timer from "../pages/Timer/Timer";
+import Jankenpon from "../pages/Jankenpon/Jankenpon";
 
 function ApplicationRoutes() {
 
@@ -37,6 +38,7 @@ function ApplicationRoutes() {
             <Route path="MultiplicationTable/" element={routeElement(<MultiplicationTable></MultiplicationTable>)}></Route>
             <Route path="ChooseMonth/" element={routeElement(<ChooseMonth></ChooseMonth>)}></Route>
             <Route path="Timer/" element={routeElement(<Timer></Timer>)}></Route>
+            <Route path="Jankenpon/" element={routeElement(<Jankenpon></Jankenpon>)}></Route>
           </Routes>
         </HashRouter>
       );

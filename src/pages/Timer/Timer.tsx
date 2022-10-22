@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Body, MainDiv } from '../../components/Common/Common.styled'
+import { ComponentBackground } from '../../components/Common/Common.styled'
 import { TimerDiv } from './Timer.styled';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 
 interface TimerState {
@@ -55,8 +56,8 @@ function Timer() {
     }
 
     return (
-        <Body color="rgb(196, 204, 197)">
-            <MainDiv style={{ height: "30%", width: "300px" }}>
+        <ComponentLayout color="rgb(196, 204, 197)">
+
                 {showTimer ?
                     <TimerDiv>{`${state.minutes}:${state.seconds <= 10 ? `0${state.seconds}` : state.seconds}`}</TimerDiv> :
                     <Form onSubmit={handleSubmit}>
@@ -80,9 +81,7 @@ function Timer() {
                 }
 
 
-
-            </MainDiv>
-        </Body>
+        </ComponentLayout>
     );
 }
 

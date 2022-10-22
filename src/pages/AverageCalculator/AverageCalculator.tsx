@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Button, Form, Toast } from 'react-bootstrap';
-import { Body, MainDiv, StyledToast } from '../../components/Common/Common.styled';
+import { ComponentBackground, StyledToast } from '../../components/Common/Common.styled';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 function AverageCalculator() {
     const [show, setShow] = useState<boolean>(false);
@@ -12,8 +13,8 @@ function AverageCalculator() {
         setShow(true);
     }
     return (
-        <Body color="rgb(235, 190, 198)">
-            <MainDiv style={{height: "250px"}}>
+        <ComponentLayout color="rgb(235, 190, 198)">
+
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>1st number</Form.Label>
@@ -37,9 +38,7 @@ function AverageCalculator() {
                     </Toast.Header>
                     <Toast.Body>{show ? `${(parseInt(firstNum) + parseInt(secondNum)) /2}`: ""} </Toast.Body>
                 </StyledToast>
-
-            </MainDiv>
-        </Body>
+        </ComponentLayout>
     )
 }
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import { ComponentBackground } from "../Common/Common.styled";
 import NavMenu from "../NavMenu/NavMenu";
 
 
@@ -9,11 +11,12 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <>
       <NavMenu />
 
-      {children}
-    </div>
+          {children}
+
+    </>
   );
 }
 
