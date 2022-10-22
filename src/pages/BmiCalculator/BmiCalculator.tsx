@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 import Fade from '../../components/Fade/Fade.styled';
 
-import { Body, MainDiv, HealthyBmi, UnhealthyBmi, OkBmi, BmiDiv } from './BmiCalculator.styled';
+import { HealthyBmi, UnhealthyBmi, OkBmi, BmiDiv } from './BmiCalculator.styled';
 
 function BmiCalculator() {
     const [weight, setWeight] = useState<number>(0);
@@ -43,8 +44,7 @@ function BmiCalculator() {
     }
 
     return (
-        <Body>
-            <MainDiv>
+      <ComponentLayout color='rgb(236, 225, 245)'>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Weight</Form.Label>
@@ -60,8 +60,7 @@ function BmiCalculator() {
                     <BmiDiv><Fade visible={show} delay="1000ms" ><BmiElement></BmiElement></Fade></BmiDiv>
                 </Form>
                 
-            </MainDiv>
-        </Body>
+                </ComponentLayout>
     )
 }
 

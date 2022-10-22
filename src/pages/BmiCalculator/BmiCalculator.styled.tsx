@@ -3,26 +3,6 @@ import { Alert } from 'react-bootstrap';
 import styled from 'styled-components';
 
 
-export const Body = styled.div`
-background-color: rgb(236, 225, 245);
-min-height: 100vh;
-
-`;
-
-export const MainDiv = styled.div`
-    width: 50%;
-    height: 230px;
-    background-color: white;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px;
-`;
 
 export const BmiDiv = styled.div`
 width: 90%; float: left;
