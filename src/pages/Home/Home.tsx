@@ -21,6 +21,7 @@ import oddevenImage from './images/oddeven.webp';
 import bbqImage from './images/bbq.webp';
 import meterImage from './images/meter.webp';
 import showerImage from './images/shower.webp';
+import encoderImage from './images/encoder.webp';
 
 function Home() {
 
@@ -34,9 +35,10 @@ function Home() {
         <StyledCardHolder><HomeworkCard title="Multiplication Table" text="Calculate the average between two numbers!" image={multiplicationImage} link="MultiplicationTable/"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Timer" text="Just a simple timer" image={timerImage} link="Timer/"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Odd or Even" text="Bet if the number is going to be odd or even!" image={oddevenImage} link="OddOrEven/"></HomeworkCard></StyledCardHolder>
-        <StyledCardHolder><HomeworkCard title="Unity conversor" text="Conver meters to milimeters, centimeters or kilometers." image={meterImage} link="UnityConversor/"></HomeworkCard></StyledCardHolder>
+        <StyledCardHolder><HomeworkCard title="Unity conversor" text="Converts meters to milimeters, centimeters or kilometers." image={meterImage} link="UnityConversor/"></HomeworkCard></StyledCardHolder>
         
-
+        <StyledCardHolder><HomeworkCard title="Encoder" text="Encodes an message to base 64." image={encoderImage} link="Encoder/"></HomeworkCard></StyledCardHolder>
+        
 
 
 

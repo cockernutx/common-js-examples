@@ -18,6 +18,7 @@ import OddOrEven from "../pages/OddOrEven/OddOrEven";
 import AmountOfMeat from "../pages/AmountOfMeat/AmountOfMeat";
 import UnityConversor from "../pages/UnityConversor/UnityConversor";
 import WaterUsage from "../pages/WaterUsage/WaterUsage";
+import Encoder from "../pages/Encoder/Encoder";
 
 function ApplicationRoutes() {
 
@@ -47,6 +48,7 @@ function ApplicationRoutes() {
             <Route path="AmountOfMeat/" element={routeElement(<AmountOfMeat></AmountOfMeat>)}></Route>
             <Route path="UnityConversor/" element={routeElement(<UnityConversor></UnityConversor>)}></Route>
             <Route path="WaterUsage/" element={routeElement(<WaterUsage></WaterUsage>)}></Route>
+            <Route path="Encoder/" element={routeElement(<Encoder></Encoder>)}></Route>
           </Routes>
         </HashRouter>
       );
