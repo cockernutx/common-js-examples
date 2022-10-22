@@ -29,6 +29,8 @@ function Home() {
         <StyledCardHolder><HomeworkCard title="Average calculator" text="Calculate the average between two numbers!" image={averageImage} link="AverageCalculator"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Multiplication Table" text="Calculate the average between two numbers!" image={multiplicationImage} link="MultiplicationTable/"></HomeworkCard></StyledCardHolder>
         <StyledCardHolder><HomeworkCard title="Timer" text="Just a simple timer" image={timerImage} link="Timer/"></HomeworkCard></StyledCardHolder>
+        <StyledCardHolder><HomeworkCard title="Odd or Even" text="Bet if the number is going to be odd or even!" image={timerImage} link="OddOrEven/"></HomeworkCard></StyledCardHolder>
+
 
 
 
