@@ -23,7 +23,7 @@ function WaterUsage() {
         <ComponentLayout color="rgb(210, 240, 209)">
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>How long is your shower in minuts</Form.Label>
+                    <Form.Label>How long is your shower in minutes</Form.Label>
                     <Form.Control required={true} type="number" onChange={(e) => { setShow(false); setFirstNum(e.target.value) }} />
                 </Form.Group>
 
