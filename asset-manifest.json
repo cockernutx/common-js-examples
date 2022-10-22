@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/js_homework/static/css/main.85768c17.css",
-    "main.js": "/js_homework/static/js/main.4e0f4a6d.js",
+    "main.js": "/js_homework/static/js/main.73e1e8dc.js",
     "static/js/787.c1112931.chunk.js": "/js_homework/static/js/787.c1112931.chunk.js",
     "static/media/multiplication.webp": "/js_homework/static/media/multiplication.81e8277bfcccf55cc3f0.webp",
     "static/media/airplane.webp": "/js_homework/static/media/airplane.7fc34d7c8a2b0a5761df.webp",
     "static/media/jankenpon.webp": "/js_homework/static/media/jankenpon.130edbd6d1321d6d144c.webp",
     "static/media/clock.webp": "/js_homework/static/media/clock.b395f10d581ea6774122.webp",
+    "static/media/oddeven.webp": "/js_homework/static/media/oddeven.aae0dced6d7b5f166289.webp",
     "static/media/calculator.webp": "/js_homework/static/media/calculator.6a32825f7c8a0d651070.webp",
     "static/media/calendar.webp": "/js_homework/static/media/calendar.6ccd4c42b14d4d2b7d95.webp",
     "static/media/timer.webp": "/js_homework/static/media/timer.2074da65739c9394658d.webp",
@@ -16,11 +17,11 @@
     "static/media/backspace-svgrepo-com.svg": "/js_homework/static/media/backspace-svgrepo-com.654b825b6462546303c8ee3d425256b2.svg",
     "index.html": "/js_homework/index.html",
     "main.85768c17.css.map": "/js_homework/static/css/main.85768c17.css.map",
-    "main.4e0f4a6d.js.map": "/js_homework/static/js/main.4e0f4a6d.js.map",
+    "main.73e1e8dc.js.map": "/js_homework/static/js/main.73e1e8dc.js.map",
     "787.c1112931.chunk.js.map": "/js_homework/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85768c17.css",
-    "static/js/main.4e0f4a6d.js"
+    "static/js/main.73e1e8dc.js"
   ]
 }
