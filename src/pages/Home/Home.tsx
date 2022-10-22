@@ -16,6 +16,7 @@ import tipsImage from './images/tips.webp';
 import multiplicationImage from './images/multiplication.webp';
 import calendarImage from './images/calendar.webp';
 import timerImage from './images/timer.webp';
+import jankenponImage from './images/jankenpon.webp';
 
 function Home() {
 
@@ -41,7 +42,7 @@ function Home() {
       <StyledCardHolder> <HomeworkCard title="Time lived" text="See how much days, hours and seconds you have lived! (not counting leap years xd)" image={clockImage} link="TimeLived/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Restaurant bill with service fee" text="Calculate the total of an restaurant bill with an service fee percentage" image={tipsImage} link="BillServiceFee/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Month picker" text="Just pick a month, simple as." image={calendarImage} link="ChooseMonth/"></HomeworkCard></StyledCardHolder>
-      <StyledCardHolder><HomeworkCard title="Jankenpon" text="An jankenpon game!" image={calendarImage} link="Jankenpon/"></HomeworkCard></StyledCardHolder>
+      <StyledCardHolder><HomeworkCard title="Jankenpon" text="An jankenpon game!" image={jankenponImage} link="Jankenpon/"></HomeworkCard></StyledCardHolder>
         
 
       </StyledContainer>
