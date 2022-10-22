@@ -3,27 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-export const CalculatorBody = styled.div`
-background-color: #dfe9f5;
-min-height: 100vh;
-
-`;
-
-export const MainDiv = styled.div`
-    width: 30%;
-    height: 50%;
-    background-color: white;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-    
-    margin: auto;
-`;
 
 export const ResultDiv = styled.div`
 text-align: right;

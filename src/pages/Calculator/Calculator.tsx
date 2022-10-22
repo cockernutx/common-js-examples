@@ -5,10 +5,10 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 import Button from 'react-bootstrap/Button';
+import ComponentLayout from '../../components/Common/ComponentLayout';
 
 import {
-    CalculatorBody,
-    MainDiv,
+
     ResultDiv,
     ResultText,
     StyledRow,
@@ -29,17 +29,17 @@ function Calculator() {
     const [showRes, setShowRes] = useState<boolean>(false);
 
     const handleModifierChange = (modifier: string) => {
-        if(showRes) {
+        if (showRes) {
             modifyExpression(result + modifier);
             setShowRes(false);
         }
         else modifyExpression(modifier);
 
-        
+
     }
 
     const getResult = () => {
-        if(showRes) {
+        if (showRes) {
             return;
         }
         evaluate();
@@ -47,7 +47,7 @@ function Calculator() {
     }
 
     const handleBackspace = () => {
-        if(showRes) {
+        if (showRes) {
             modifyExpression(result.toString().slice(0, -1));
             setShowRes(false);
         }
@@ -56,96 +56,94 @@ function Calculator() {
         }
     }
     const handleClear = () => {
-        if(showRes) setShowRes(false);
+        if (showRes) setShowRes(false);
 
         clear();
     }
 
     return (
-        <CalculatorBody>
-            <MainDiv>
-                <ResultDiv><ResultText>{showRes ? result : expression}</ResultText></ResultDiv>
-                <Container>
-                    <StyledRow xs={1} md={4} className="g-4">
-                        <Col>
-                            <BackspaceButton size="lg" variant="danger" onClick={handleBackspace}><BackspaceImage src={backspaceIcon}></BackspaceImage></BackspaceButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="danger" onClick={handleClear}>cls</CalculatorButton>
-                        </Col>
-                        <Col>
-                          
-                            <Dropdown>
-                                <ParenthesisButton variant="secondary" id="dropdown-basic">
-                                    par
-                                </ParenthesisButton>
+        <ComponentLayout color="#dfe9f5">
+                        <ResultDiv><ResultText>{showRes ? result : expression}</ResultText></ResultDiv>
+                        <Container>
+                            <StyledRow xs={1} md={4} className="g-4">
+                                <Col>
+                                    <BackspaceButton size="lg" variant="danger" onClick={handleBackspace}><BackspaceImage src={backspaceIcon}></BackspaceImage></BackspaceButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="danger" onClick={handleClear}>cls</CalculatorButton>
+                                </Col>
+                                <Col>
 
-                                <Dropdown.Menu>
-                                <Dropdown.Item onClick={() => { handleModifierChange("(") }}>{"("}</Dropdown.Item>
-                                <Dropdown.Item onClick={() => { handleModifierChange(")") }}>{")"}</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("/") }}>/</CalculatorButton>
-                        </Col>
-                    </StyledRow>
-                    <StyledRow  className="g-4">
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("7") }}>7</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("8") }}>8</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("9") }}>9</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("*") }}>*</CalculatorButton>
-                        </Col>
-                    </StyledRow>
-                    <StyledRow  className="g-4">
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("4") }}>4</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("5") }}>5</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("6") }}>6</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("-") }}>-</CalculatorButton>
-                        </Col>
-                    </StyledRow>
-                    <StyledRow className="g-4">
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("1") }}>1</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("2") }}>2</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("3") }}>3</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("+") }}>+</CalculatorButton>
-                        </Col>
-                    </StyledRow>
-                    <StyledRow className="g-4">
-                        <Col >
-                            <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("0") }}>0</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <CalculatorButton variant="outline-info" onClick={() => { handleModifierChange(".") }}>.</CalculatorButton>
-                        </Col>
-                        <Col>
-                            <EqualsButton variant="outline-success" onClick={getResult}>=</EqualsButton>
-                        </Col>
-                    </StyledRow>
-                </Container>
-            </MainDiv>
-        </CalculatorBody>
+                                    <Dropdown>
+                                        <ParenthesisButton variant="secondary" id="dropdown-basic">
+                                            par
+                                        </ParenthesisButton>
+
+                                        <Dropdown.Menu>
+                                            <Dropdown.Item onClick={() => { handleModifierChange("(") }}>{"("}</Dropdown.Item>
+                                            <Dropdown.Item onClick={() => { handleModifierChange(")") }}>{")"}</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("/") }}>/</CalculatorButton>
+                                </Col>
+                            </StyledRow>
+                            <StyledRow className="g-4">
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("7") }}>7</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("8") }}>8</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("9") }}>9</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("*") }}>*</CalculatorButton>
+                                </Col>
+                            </StyledRow>
+                            <StyledRow className="g-4">
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("4") }}>4</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("5") }}>5</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("6") }}>6</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("-") }}>-</CalculatorButton>
+                                </Col>
+                            </StyledRow>
+                            <StyledRow className="g-4">
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("1") }}>1</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("2") }}>2</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("3") }}>3</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-warning" onClick={() => { handleModifierChange("+") }}>+</CalculatorButton>
+                                </Col>
+                            </StyledRow>
+                            <StyledRow className="g-4">
+                                <Col >
+                                    <CalculatorButton variant="outline-dark" onClick={() => { handleModifierChange("0") }}>0</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <CalculatorButton variant="outline-info" onClick={() => { handleModifierChange(".") }}>.</CalculatorButton>
+                                </Col>
+                                <Col>
+                                    <EqualsButton variant="outline-success" onClick={getResult}>=</EqualsButton>
+                                </Col>
+                            </StyledRow>
+                        </Container>
+                        </ComponentLayout>
     )
 }
 
