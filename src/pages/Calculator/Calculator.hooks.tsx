@@ -1,5 +1,5 @@
 import exp from 'constants';
-import math from 'mathjs';
+import * as math from 'mathjs';
 import React, {useState} from 'react';
 
 export function useCalculator() {
