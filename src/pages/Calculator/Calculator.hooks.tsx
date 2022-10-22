@@ -1,4 +1,5 @@
 import exp from 'constants';
+import math from 'mathjs';
 import React, {useState} from 'react';
 
 export function useCalculator() {
@@ -6,7 +7,7 @@ export function useCalculator() {
     const [result, setResult] = useState<string>("");
 
     const evaluate = () => {
-        let res = eval(expression);
+        let res = math.evaluate(expression);
         setResult(res);
         setExpression("");
     }
