@@ -13,6 +13,7 @@ height: 100vh;
 `;
 
 export const StyledToast = styled(Toast)`
-margin-top: 10px;
-margin-left: 20px;
+position: fixed;
+z-index: 100;
+
 `;
