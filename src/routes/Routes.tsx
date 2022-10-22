@@ -15,6 +15,7 @@ import ChooseMonth from "../pages/ChooseMonth/ChooseMonth";
 import Timer from "../pages/Timer/Timer";
 import Jankenpon from "../pages/Jankenpon/Jankenpon";
 import OddOrEven from "../pages/OddOrEven/OddOrEven";
+import AmountOfMeat from "../pages/AmountOfMeat/AmountOfMeat";
 
 function ApplicationRoutes() {
 
@@ -41,6 +42,7 @@ function ApplicationRoutes() {
             <Route path="Timer/" element={routeElement(<Timer></Timer>)}></Route>
             <Route path="Jankenpon/" element={routeElement(<Jankenpon></Jankenpon>)}></Route>
             <Route path="OddOrEven/" element={routeElement(<OddOrEven></OddOrEven>)}></Route>
+            <Route path="AmountOfMeat/" element={routeElement(<AmountOfMeat></AmountOfMeat>)}></Route>
           </Routes>
         </HashRouter>
       );

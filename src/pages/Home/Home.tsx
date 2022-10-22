@@ -18,6 +18,7 @@ import calendarImage from './images/calendar.webp';
 import timerImage from './images/timer.webp';
 import jankenponImage from './images/jankenpon.webp';
 import oddevenImage from './images/oddeven.webp';
+import bbqImage from './images/bbq.webp';
 
 function Home() {
 
@@ -46,8 +47,8 @@ function Home() {
       <StyledCardHolder><HomeworkCard title="Restaurant bill with service fee" text="Calculate the total of an restaurant bill with an service fee percentage" image={tipsImage} link="BillServiceFee/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Month picker" text="Just pick a month, simple as." image={calendarImage} link="ChooseMonth/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Jankenpon" text="An jankenpon game!" image={jankenponImage} link="Jankenpon/"></HomeworkCard></StyledCardHolder>
+      <StyledCardHolder><HomeworkCard title="BBQ!" text="See the ammount of meat you will need for your bbq." image={bbqImage} link="AmountOfMeat/"></HomeworkCard></StyledCardHolder>
         
-
       </StyledContainer>
     
  </div >

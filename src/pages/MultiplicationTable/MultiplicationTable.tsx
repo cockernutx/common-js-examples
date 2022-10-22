@@ -40,7 +40,7 @@ function MultiplicationTable() {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>'{firstNum}'' multiplication table</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     {res.map((a) => <>{a}<br></br></>)}

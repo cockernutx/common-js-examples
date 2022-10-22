@@ -11,6 +11,7 @@ function OddOrEven() {
     const [res, setRes ] = useState<OddEven>();
     const [userOption, setUserOption] = useState<OddEven>();
 
+
     const handleClick = (option: OddEven) => {
         start();
         setUserOption(option);
@@ -21,6 +22,7 @@ function OddOrEven() {
         if(userOption != res) {
             return (
                 <ResultDisplay variant="danger">{num} is {res}! You lost...</ResultDisplay>
+                
             )
         }
         else {
@@ -37,6 +39,7 @@ function OddOrEven() {
         if(!started) {
             if(num%2 == 0) {
                 setRes("even")
+                
             }
             else {
                 setRes("odd");
