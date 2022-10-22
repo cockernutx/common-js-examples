@@ -17,6 +17,7 @@ import Jankenpon from "../pages/Jankenpon/Jankenpon";
 import OddOrEven from "../pages/OddOrEven/OddOrEven";
 import AmountOfMeat from "../pages/AmountOfMeat/AmountOfMeat";
 import UnityConversor from "../pages/UnityConversor/UnityConversor";
+import WaterUsage from "../pages/WaterUsage/WaterUsage";
 
 function ApplicationRoutes() {
 
@@ -45,6 +46,7 @@ function ApplicationRoutes() {
             <Route path="OddOrEven/" element={routeElement(<OddOrEven></OddOrEven>)}></Route>
             <Route path="AmountOfMeat/" element={routeElement(<AmountOfMeat></AmountOfMeat>)}></Route>
             <Route path="UnityConversor/" element={routeElement(<UnityConversor></UnityConversor>)}></Route>
+            <Route path="WaterUsage/" element={routeElement(<WaterUsage></WaterUsage>)}></Route>
           </Routes>
         </HashRouter>
       );

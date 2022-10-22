@@ -20,6 +20,7 @@ import jankenponImage from './images/jankenpon.webp';
 import oddevenImage from './images/oddeven.webp';
 import bbqImage from './images/bbq.webp';
 import meterImage from './images/meter.webp';
+import showerImage from './images/shower.webp';
 
 function Home() {
 
@@ -50,6 +51,7 @@ function Home() {
       <StyledCardHolder><HomeworkCard title="Month picker" text="Just pick a month, simple as." image={calendarImage} link="ChooseMonth/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="Jankenpon" text="An jankenpon game!" image={jankenponImage} link="Jankenpon/"></HomeworkCard></StyledCardHolder>
       <StyledCardHolder><HomeworkCard title="BBQ!" text="See the ammount of meat you will need for your bbq." image={bbqImage} link="AmountOfMeat/"></HomeworkCard></StyledCardHolder>
+      <StyledCardHolder><HomeworkCard title="Water usage" text="See how much water you use in a shower." image={showerImage} link="WaterUsage/"></HomeworkCard></StyledCardHolder>
         
       </StyledContainer>
     
