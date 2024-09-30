@@ -1,2 +1,2 @@
-# js_homework
-Just some of my homeworks, nothing much
+# common-js-examples
+A collection of common Javascript functions and examples used to teach the basics of programming.
